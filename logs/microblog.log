@@ -58,3 +58,4 @@ Traceback (most recent call last):
 TypeError: 'Pagination' object is not iterable
 2022-08-30 20:30:31,111 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
 2022-08-30 20:43:49,262 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
+2022-08-30 20:51:33,665 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
