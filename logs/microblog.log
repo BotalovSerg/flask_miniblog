@@ -61,3 +61,22 @@ TypeError: 'Pagination' object is not iterable
 2022-08-30 20:51:33,665 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
 2022-08-31 21:01:21,839 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:44]
 2022-08-31 21:03:19,968 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:44]
+2022-09-01 19:54:06,260 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:46]
+2022-09-01 19:57:10,573 ERROR: Exception on /reset_password_request [POST] [in C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\app\routes.py", line 173, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\app\models.py", line 60, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2022-09-01 20:30:11,889 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:48]
