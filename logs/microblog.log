@@ -80,3 +80,4 @@ Traceback (most recent call last):
     return jwt.encode(
 AttributeError: 'str' object has no attribute 'decode'
 2022-09-01 20:30:11,889 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:48]
+2022-09-01 21:21:30,077 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:52]
