@@ -94,3 +94,4 @@ AttributeError: 'str' object has no attribute 'decode'
 2022-09-04 20:44:07,281 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:74]
 2022-09-04 20:53:09,148 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:74]
 2022-09-05 20:24:35,771 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:77]
+2022-09-05 21:40:53,663 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:77]
