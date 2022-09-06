@@ -1,95 +1,100 @@
-2022-08-29 20:22:31,414 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-29 20:51:41,220 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-29 20:52:11,438 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-29 22:06:01,431 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-29 22:31:47,910 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-30 19:40:07,096 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-30 20:00:31,127 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-30 20:25:10,509 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:42]
-2022-08-30 20:25:30,615 ERROR: Exception on /explore [GET] [in C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py:1741]
+2022-09-06 20:55:53,314 ERROR: Exception on /auth/login [POST] [in C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py:1454]
 Traceback (most recent call last):
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\routes.py", line 131, in explore
-    return render_template('index.html', title='Explore', posts=posts)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\templating.py", line 147, in render_template
-    return _render(app, template, context)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\templating.py", line 130, in _render
-    rv = template.render(context)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\jinja2\environment.py", line 1301, in render
-    self.environment.handle_exception()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\index.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\base.html", line 33, in top-level template code
-    {% block content %}{% endblock %}
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\index.html", line 18, in block 'content'
-    {% for post in posts %}
-TypeError: 'Pagination' object is not iterable
-2022-08-30 20:25:39,216 ERROR: Exception on /index [GET] [in C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py:1741]
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1770, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: user.last_message_read_time
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
     rv = self.dispatch_request()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\routes.py", line 30, in index
-    return render_template('index.html', title='Home page', form=form, posts=posts)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\templating.py", line 147, in render_template
-    return _render(app, template, context)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\templating.py", line 130, in _render
-    rv = template.render(context)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\jinja2\environment.py", line 1301, in render
-    self.environment.handle_exception()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\index.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\base.html", line 33, in top-level template code
-    {% block content %}{% endblock %}
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\index.html", line 18, in block 'content'
-    {% for post in posts %}
-TypeError: 'Pagination' object is not iterable
-2022-08-30 20:25:43,665 ERROR: Exception on /index [GET] [in C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py:1741]
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\app\auth\routes.py", line 19, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\orm\query.py", line 2760, in first
+    return self.limit(1)._iter().first()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\orm\query.py", line 2844, in _iter
+    result = self.session.execute(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\orm\session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1582, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\sql\elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1451, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1813, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1994, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1770, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: user.last_message_read_time
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen, user.last_message_read_time AS user_last_message_read_time 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('serg', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+2022-09-06 20:56:10,598 ERROR: Exception on /auth/login [POST] [in C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py:1454]
 Traceback (most recent call last):
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1770, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: user.last_message_read_time
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
     rv = self.dispatch_request()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\routes.py", line 30, in index
-    return render_template('index.html', title='Home page', form=form, posts=posts)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\templating.py", line 147, in render_template
-    return _render(app, template, context)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\templating.py", line 130, in _render
-    rv = template.render(context)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\jinja2\environment.py", line 1301, in render
-    self.environment.handle_exception()
-  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\index.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\base.html", line 33, in top-level template code
-    {% block content %}{% endblock %}
-  File "C:\Users\User\PycharmProjects\flask_miniblog\app\templates\index.html", line 18, in block 'content'
-    {% for post in posts %}
-TypeError: 'Pagination' object is not iterable
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\app\auth\routes.py", line 19, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\orm\query.py", line 2760, in first
+    return self.limit(1)._iter().first()
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\orm\query.py", line 2844, in _iter
+    result = self.session.execute(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\orm\session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1582, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\sql\elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1451, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1813, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1994, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\base.py", line 1770, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\User\PycharmProjects\flask_miniblog\env\lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: user.last_message_read_time
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen, user.last_message_read_time AS user_last_message_read_time 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('sefg', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
