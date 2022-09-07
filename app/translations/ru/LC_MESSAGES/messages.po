@@ -7,176 +7,221 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-02 19:34+0500\n"
+"POT-Creation-Date: 2022-09-07 19:35+0500\n"
 "PO-Revision-Date: 2022-09-02 19:42+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:20
+#: app/__init__.py:19
 msgid "Please log in to access this page."
 msgstr ""
 
-#: app/email.py:22
-msgid "[Microblog] Reset Your Password"
-msgstr ""
-
-#: app/forms.py:11 app/forms.py:18 app/forms.py:51
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/forms.py:11 app/forms.py:18
+#: app/forms.py:51 app/main/forms.py:10
 msgid "Username"
 msgstr ""
 
+#: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:41
 #: app/forms.py:12 app/forms.py:20 app/forms.py:43
 msgid "Password"
 msgstr ""
 
-#: app/forms.py:13
+#: app/auth/forms.py:11 app/forms.py:13
 msgid "Remember Me"
 msgstr ""
 
-#: app/forms.py:14 app/routes.py:74 app/templates/login.html:5
+#: app/auth/forms.py:12 app/auth/routes.py:28 app/forms.py:14 app/routes.py:78
+#: app/templates/auth/login.html:5 app/templates/login.html:5
 msgid "Sign In"
 msgstr ""
 
-#: app/forms.py:19 app/forms.py:38
+#: app/auth/forms.py:17 app/auth/forms.py:36 app/forms.py:19 app/forms.py:38
 msgid "Email"
 msgstr ""
 
-#: app/forms.py:22 app/forms.py:45
+#: app/auth/forms.py:20 app/auth/forms.py:43 app/forms.py:22 app/forms.py:45
 msgid "Repeat Password"
 msgstr ""
 
-#: app/forms.py:24 app/routes.py:95 app/templates/register.html:5
+#: app/auth/forms.py:22 app/auth/routes.py:49 app/forms.py:24 app/routes.py:99
+#: app/templates/auth/register.html:5 app/templates/register.html:5
 msgid "Register"
 msgstr ""
 
-#: app/forms.py:29 app/forms.py:64
+#: app/auth/forms.py:27 app/forms.py:29 app/forms.py:64 app/main/forms.py:23
 msgid "Please use a different username."
 msgstr ""
 
-#: app/forms.py:34
+#: app/auth/forms.py:32 app/forms.py:34
 msgid "Please use a different email address."
 msgstr ""
 
-#: app/forms.py:39 app/forms.py:47
+#: app/auth/forms.py:37 app/auth/forms.py:45 app/forms.py:39 app/forms.py:47
 msgid "Request Password Reset"
 msgstr ""
 
-#: app/forms.py:52
+#: app/forms.py:52 app/main/forms.py:11
 msgid "About me"
 msgstr ""
 
-#: app/forms.py:54 app/forms.py:73
+#: app/forms.py:54 app/forms.py:73 app/main/forms.py:13 app/main/forms.py:32
+#: app/main/forms.py:49
 msgid "Submit"
 msgstr ""
 
-#: app/forms.py:72
+#: app/forms.py:72 app/main/forms.py:31
 msgid "Say something"
 msgstr ""
 
-#: app/routes.py:30
+#: app/main/routes.py:38 app/routes.py:34
 msgid "Your post is now live!"
 msgstr ""
 
-#: app/routes.py:39 app/templates/base.html:21
+#: app/main/routes.py:47 app/routes.py:43 app/templates/base.html:21
 msgid "Home"
 msgstr ""
 
-#: app/routes.py:54 app/templates/base.html:22
+#: app/main/routes.py:62 app/routes.py:58 app/templates/base.html:22
 msgid "Explore"
 msgstr ""
 
-#: app/routes.py:67
+#: app/auth/routes.py:21 app/routes.py:71
 msgid "Invalid username or password"
 msgstr ""
 
-#: app/routes.py:93
+#: app/auth/routes.py:47 app/routes.py:97
 msgid "Congratulations, you are now a registered user!"
 msgstr ""
 
-#: app/routes.py:108
+#: app/auth/routes.py:63 app/routes.py:112
 msgid "Check your email for the instructions to reset your password"
 msgstr ""
 
-#: app/routes.py:111 app/templates/reset_password_request.html:5
+#: app/auth/routes.py:66 app/routes.py:115
+#: app/templates/auth/reset_password_request.html:5
+#: app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr ""
 
-#: app/routes.py:125
+#: app/auth/routes.py:80 app/routes.py:129
 msgid "Your password has been reset."
 msgstr ""
 
-#: app/routes.py:154
+#: app/main/routes.py:99 app/routes.py:158
 msgid "Your changes have been saved."
 msgstr ""
 
-#: app/routes.py:159 app/templates/edit_profile.html:5
+#: app/main/routes.py:104 app/routes.py:163 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr ""
 
-#: app/routes.py:170 app/routes.py:190
+#: app/main/routes.py:115 app/main/routes.py:135 app/routes.py:174
+#: app/routes.py:194
 #, python-format
 msgid "User %(username)s not found."
 msgstr ""
 
-#: app/routes.py:173
+#: app/main/routes.py:118 app/routes.py:177
 msgid "You cannot follow yourself!"
 msgstr ""
 
-#: app/routes.py:177
+#: app/main/routes.py:122 app/routes.py:181
 #, python-format
 msgid "You are following %(username)s!"
 msgstr ""
 
-#: app/routes.py:193
+#: app/main/routes.py:138 app/routes.py:197
 msgid "You cannot unfollow yourself!"
 msgstr ""
 
-#: app/routes.py:197
+#: app/main/routes.py:142 app/routes.py:201
 #, python-format
 msgid "You are not following %(username)s."
 msgstr ""
 
-#: app/templates/404.html:4
+#: app/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr ""
+
+#: app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: app/main/forms.py:36 app/main/routes.py:168
+msgid "Search"
+msgstr ""
+
+#: app/main/forms.py:47
+msgid "Message"
+msgstr ""
+
+#: app/main/routes.py:183
+msgid "Your message has been sent."
+msgstr ""
+
+#: app/main/routes.py:185
+msgid "Send Message"
+msgstr ""
+
+#: app/templates/404.html:4 app/templates/errors/404.html:4
 msgid "Not Found"
 msgstr ""
 
 #: app/templates/404.html:5 app/templates/500.html:6
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
 msgid "Back"
 msgstr ""
 
-#: app/templates/500.html:4
+#: app/templates/500.html:4 app/templates/errors/500.html:4
 msgid "An unexpected error has occurred"
 msgstr ""
 
-#: app/templates/500.html:5
+#: app/templates/500.html:5 app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr ""
 
-#: app/templates/_post.html:14
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
+msgstr ""
+
+#: app/templates/_post.html:27
+msgid "Translate"
 msgstr ""
 
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
 msgstr ""
 
-#: app/templates/base.html:26
+#: app/templates/base.html:33
 msgid "Login"
 msgstr ""
 
-#: app/templates/base.html:28
+#: app/templates/base.html:36 app/templates/messages.html:4
+msgid "Messages"
+msgstr ""
+
+#: app/templates/base.html:45
 msgid "Profile"
 msgstr ""
 
-#: app/templates/base.html:29
+#: app/templates/base.html:46
 msgid "Logout"
+msgstr ""
+
+#: app/templates/base.html:83
+msgid "Error: Could not contact server."
 msgstr ""
 
 #: app/templates/index.html:5
@@ -184,48 +229,73 @@ msgstr ""
 msgid "Hi, %(username)s!"
 msgstr ""
 
-#: app/templates/index.html:17 app/templates/user.html:41
+#: app/templates/index.html:17 app/templates/user.html:44
 msgid "Newer posts"
 msgstr ""
 
-#: app/templates/index.html:22 app/templates/user.html:46
+#: app/templates/index.html:22 app/templates/user.html:49
 msgid "Older posts"
 msgstr ""
 
-#: app/templates/login.html:12
+#: app/templates/auth/login.html:12 app/templates/login.html:12
 msgid "New User?"
 msgstr ""
 
-#: app/templates/login.html:12
+#: app/templates/auth/login.html:12 app/templates/login.html:12
 msgid "Click to Register!"
 msgstr ""
 
-#: app/templates/login.html:14
+#: app/templates/auth/login.html:14 app/templates/login.html:14
 msgid "Forgot Your Password?"
 msgstr ""
 
-#: app/templates/login.html:15
+#: app/templates/auth/login.html:15 app/templates/login.html:15
 msgid "Click to Reset It"
 msgstr ""
 
-#: app/templates/reset_password.html:5
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr ""
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr ""
+
+#: app/templates/auth/reset_password.html:5 app/templates/reset_password.html:5
 msgid "Reset Your Password"
+msgstr ""
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr ""
+
+#: app/templates/search.html:12
+msgid "Previous results"
+msgstr ""
+
+#: app/templates/search.html:17
+msgid "Next results"
+msgstr ""
+
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
 msgstr ""
 
 #: app/templates/user.html:8
 msgid "User"
 msgstr ""
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:9
 msgid "Last seen on"
 msgstr ""
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d followers"
 msgstr ""
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d following"
 msgstr ""
@@ -234,450 +304,338 @@ msgstr ""
 msgid "Edit your profile"
 msgstr ""
 
-#: app/templates/user.html:20
+#: app/templates/user.html:20 app/templates/user_popup.html:17
 msgid "Follow"
 msgstr ""
 
-#: app/templates/user.html:27
+#: app/templates/user.html:27 app/templates/user_popup.html:24
 msgid "Unfollow"
 msgstr ""
 
-#: env/Lib/site-packages/click/_termui_impl.py:496
-msgid "{editor}: Editing failed"
+#: app/templates/user.html:32
+msgid "Send private message"
 msgstr ""
 
-#: env/Lib/site-packages/click/_termui_impl.py:500
-msgid "{editor}: Editing failed: {e}"
-msgstr ""
+#~ msgid "{editor}: Editing failed"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1097
-msgid "Aborted!"
-msgstr ""
+#~ msgid "{editor}: Editing failed: {e}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1282
-#: env/Lib/site-packages/click/decorators.py:495
-msgid "Show this message and exit."
-msgstr ""
+#~ msgid "Aborted!"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1313
-#: env/Lib/site-packages/click/core.py:1339
-msgid "(Deprecated) {text}"
-msgstr ""
+#~ msgid "Show this message and exit."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1357
-msgid "Options"
-msgstr ""
+#~ msgid "(Deprecated) {text}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1385
-msgid "Got unexpected extra argument ({args})"
-msgid_plural "Got unexpected extra arguments ({args})"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/click/core.py:1398
-msgid "DeprecationWarning: The command {name!r} is deprecated."
-msgstr ""
+#~ msgid "Options"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1605
-msgid "Commands"
-msgstr ""
+#~ msgid "Got unexpected extra argument ({args})"
+#~ msgid_plural "Got unexpected extra arguments ({args})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/click/core.py:1637
-msgid "Missing command."
-msgstr ""
+#~ msgid "DeprecationWarning: The command {name!r} is deprecated."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:1715
-msgid "No such command {name!r}."
-msgstr ""
+#~ msgid "Commands"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:2271
-msgid "Value must be an iterable."
-msgstr ""
+#~ msgid "Missing command."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:2293
-msgid "Takes {nargs} values but 1 was given."
-msgid_plural "Takes {nargs} values but {len} were given."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/click/core.py:2734
-msgid "env var: {var}"
-msgstr ""
+#~ msgid "No such command {name!r}."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:2764
-msgid "(dynamic)"
-msgstr ""
+#~ msgid "Value must be an iterable."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/core.py:2777
-msgid "default: {default}"
-msgstr ""
+#~ msgid "Takes {nargs} values but 1 was given."
+#~ msgid_plural "Takes {nargs} values but {len} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/click/core.py:2790
-msgid "required"
-msgstr ""
+#~ msgid "env var: {var}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/decorators.py:400
-#, python-format
-msgid "%(prog)s, version %(version)s"
-msgstr ""
+#~ msgid "(dynamic)"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/decorators.py:464
-msgid "Show the version and exit."
-msgstr ""
+#~ msgid "default: {default}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:43
-#: env/Lib/site-packages/click/exceptions.py:79
-msgid "Error: {message}"
-msgstr ""
+#~ msgid "required"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:71
-msgid "Try '{command} {option}' for help."
-msgstr ""
+#~ msgid "%(prog)s, version %(version)s"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:120
-msgid "Invalid value: {message}"
-msgstr ""
+#~ msgid "Show the version and exit."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:122
-msgid "Invalid value for {param_hint}: {message}"
-msgstr ""
+#~ msgid "Error: {message}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:178
-msgid "Missing argument"
-msgstr ""
+#~ msgid "Try '{command} {option}' for help."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:180
-msgid "Missing option"
-msgstr ""
+#~ msgid "Invalid value: {message}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:182
-msgid "Missing parameter"
-msgstr ""
+#~ msgid "Invalid value for {param_hint}: {message}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:184
-msgid "Missing {param_type}"
-msgstr ""
+#~ msgid "Missing argument"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:191
-msgid "Missing parameter: {param_name}"
-msgstr ""
+#~ msgid "Missing option"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:211
-msgid "No such option: {name}"
-msgstr ""
+#~ msgid "Missing parameter"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:225
-msgid "Did you mean {possibility}?"
-msgid_plural "(Possible options: {possibilities})"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/click/exceptions.py:261
-msgid "unknown error"
-msgstr ""
+#~ msgid "Missing {param_type}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/exceptions.py:268
-msgid "Could not open file {filename!r}: {message}"
-msgstr ""
+#~ msgid "Missing parameter: {param_name}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/parser.py:231
-msgid "Argument {name!r} takes {nargs} values."
-msgstr ""
+#~ msgid "No such option: {name}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/parser.py:413
-msgid "Option {name!r} does not take a value."
-msgstr ""
+#~ msgid "Did you mean {possibility}?"
+#~ msgid_plural "(Possible options: {possibilities})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/click/parser.py:473
-msgid "Option {name!r} requires an argument."
-msgid_plural "Option {name!r} requires {nargs} arguments."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/click/shell_completion.py:315
-msgid "Shell completion is not supported for Bash versions older than 4.4."
-msgstr ""
+#~ msgid "unknown error"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/shell_completion.py:322
-msgid "Couldn't detect Bash version, shell completion is not supported."
-msgstr ""
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/termui.py:160
-msgid "Repeat for confirmation"
-msgstr ""
+#~ msgid "Argument {name!r} takes {nargs} values."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/termui.py:176
-msgid "Error: The value you entered was invalid."
-msgstr ""
+#~ msgid "Option {name!r} does not take a value."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/termui.py:178
-msgid "Error: {e.message}"
-msgstr ""
+#~ msgid "Option {name!r} requires an argument."
+#~ msgid_plural "Option {name!r} requires {nargs} arguments."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/click/termui.py:189
-msgid "Error: The two entered values do not match."
-msgstr ""
+#~ msgid "Shell completion is not supported for Bash versions older than 4.4."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/termui.py:245
-msgid "Error: invalid input"
-msgstr ""
+#~ msgid "Couldn't detect Bash version, shell completion is not supported."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/termui.py:776
-msgid "Press any key to continue..."
-msgstr ""
+#~ msgid "Repeat for confirmation"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:265
-msgid ""
-"Choose from:\n"
-"\t{choices}"
-msgstr ""
+#~ msgid "Error: The value you entered was invalid."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:299
-msgid "{value!r} is not {choice}."
-msgid_plural "{value!r} is not one of {choices}."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/click/types.py:389
-msgid "{value!r} does not match the format {format}."
-msgid_plural "{value!r} does not match the formats {formats}."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/click/types.py:409
-msgid "{value!r} is not a valid {number_type}."
-msgstr ""
+#~ msgid "Error: {e.message}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:465
-msgid "{value} is not in the range {range}."
-msgstr ""
+#~ msgid "Error: The two entered values do not match."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:606
-msgid "{value!r} is not a valid boolean."
-msgstr ""
+#~ msgid "Error: invalid input"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:630
-msgid "{value!r} is not a valid UUID."
-msgstr ""
+#~ msgid "Press any key to continue..."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:811
-msgid "file"
-msgstr ""
+#~ msgid ""
+#~ "Choose from:\n"
+#~ "\t{choices}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:813
-msgid "directory"
-msgstr ""
+#~ msgid "{value!r} is not {choice}."
+#~ msgid_plural "{value!r} is not one of {choices}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/click/types.py:815
-msgid "path"
-msgstr ""
+#~ msgid "{value!r} does not match the format {format}."
+#~ msgid_plural "{value!r} does not match the formats {formats}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/click/types.py:861
-msgid "{name} {filename!r} does not exist."
-msgstr ""
+#~ msgid "{value!r} is not a valid {number_type}."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:870
-msgid "{name} {filename!r} is a file."
-msgstr ""
+#~ msgid "{value} is not in the range {range}."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:878
-msgid "{name} '{filename}' is a directory."
-msgstr ""
+#~ msgid "{value!r} is not a valid boolean."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:887
-msgid "{name} {filename!r} is not readable."
-msgstr ""
+#~ msgid "{value!r} is not a valid UUID."
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:896
-msgid "{name} {filename!r} is not writable."
-msgstr ""
+#~ msgid "file"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:905
-msgid "{name} {filename!r} is not executable."
-msgstr ""
+#~ msgid "directory"
+#~ msgstr ""
 
-#: env/Lib/site-packages/click/types.py:971
-msgid "{len_type} values are required, but {len_value} was given."
-msgid_plural "{len_type} values are required, but {len_value} were given."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/flask_wtf/file.py:35
-#: env/Lib/site-packages/wtforms/validators.py:294
-#: env/Lib/site-packages/wtforms/validators.py:322
-msgid "This field is required."
-msgstr ""
+#~ msgid "path"
+#~ msgstr ""
 
-#: env/Lib/site-packages/flask_wtf/file.py:69
-msgid "File does not have an approved extension: {extensions}"
-msgstr ""
+#~ msgid "{name} {filename!r} does not exist."
+#~ msgstr ""
 
-#: env/Lib/site-packages/flask_wtf/file.py:77
-msgid "File does not have an approved extension."
-msgstr ""
+#~ msgid "{name} {filename!r} is a file."
+#~ msgstr ""
 
-#: env/Lib/site-packages/flask_wtf/file.py:112
-msgid "File must be between {min_size} and {max_size} bytes."
-msgstr ""
+#~ msgid "{name} '{filename}' is a directory."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:87
-#, python-format
-msgid "Invalid field name '%s'."
-msgstr ""
+#~ msgid "{name} {filename!r} is not readable."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:100
-#, python-format
-msgid "Field must be equal to %(other_name)s."
-msgstr ""
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:146
-#, python-format
-msgid "Field must be at least %(min)d character long."
-msgid_plural "Field must be at least %(min)d characters long."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/wtforms/validators.py:152
-#, python-format
-msgid "Field cannot be longer than %(max)d character."
-msgid_plural "Field cannot be longer than %(max)d characters."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/wtforms/validators.py:158
-#, python-format
-msgid "Field must be exactly %(max)d character long."
-msgid_plural "Field must be exactly %(max)d characters long."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/wtforms/validators.py:164
-#, python-format
-msgid "Field must be between %(min)d and %(max)d characters long."
-msgstr ""
+#~ msgid "{name} {filename!r} is not executable."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:217
-#, python-format
-msgid "Number must be at least %(min)s."
-msgstr ""
+#~ msgid "{len_type} values are required, but {len_value} was given."
+#~ msgid_plural "{len_type} values are required, but {len_value} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/wtforms/validators.py:220
-#, python-format
-msgid "Number must be at most %(max)s."
-msgstr ""
+#~ msgid "This field is required."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:223
-#, python-format
-msgid "Number must be between %(min)s and %(max)s."
-msgstr ""
+#~ msgid "File does not have an approved extension: {extensions}"
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:357
-msgid "Invalid input."
-msgstr ""
+#~ msgid "File does not have an approved extension."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:416
-msgid "Invalid email address."
-msgstr ""
+#~ msgid "File must be between {min_size} and {max_size} bytes."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:454
-msgid "Invalid IP address."
-msgstr ""
+#~ msgid "Invalid field name '%s'."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:497
-msgid "Invalid Mac address."
-msgstr ""
+#~ msgid "Field must be equal to %(other_name)s."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/validators.py:532
-msgid "Invalid URL."
-msgstr ""
+#~ msgid "Field must be at least %(min)d character long."
+#~ msgid_plural "Field must be at least %(min)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/wtforms/validators.py:553
-msgid "Invalid UUID."
-msgstr ""
+#~ msgid "Field cannot be longer than %(max)d character."
+#~ msgid_plural "Field cannot be longer than %(max)d characters."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/wtforms/validators.py:586
-#, python-format
-msgid "Invalid value, must be one of: %(values)s."
-msgstr ""
+#~ msgid "Field must be exactly %(max)d character long."
+#~ msgid_plural "Field must be exactly %(max)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
 
-#: env/Lib/site-packages/wtforms/validators.py:621
-#, python-format
-msgid "Invalid value, can't be any of: %(values)s."
-msgstr ""
+#~ msgid "Field must be between %(min)d and %(max)d characters long."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/csrf/core.py:96
-msgid "Invalid CSRF Token."
-msgstr ""
+#~ msgid "Number must be at least %(min)s."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/csrf/session.py:63
-msgid "CSRF token missing."
-msgstr ""
+#~ msgid "Number must be at most %(max)s."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/csrf/session.py:71
-msgid "CSRF failed."
-msgstr ""
+#~ msgid "Number must be between %(min)s and %(max)s."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/csrf/session.py:76
-msgid "CSRF token expired."
-msgstr ""
+#~ msgid "Invalid input."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/choices.py:132
-msgid "Invalid Choice: could not coerce."
-msgstr ""
+#~ msgid "Invalid email address."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/choices.py:136
-#: env/Lib/site-packages/wtforms/fields/choices.py:188
-msgid "Choices cannot be None."
-msgstr ""
+#~ msgid "Invalid IP address."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/choices.py:145
-msgid "Not a valid choice."
-msgstr ""
+#~ msgid "Invalid Mac address."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/choices.py:181
-msgid "Invalid choice(s): one or more data inputs could not be coerced."
-msgstr ""
+#~ msgid "Invalid URL."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/choices.py:200
-#, python-format
-msgid "'%(value)s' is not a valid choice for this field."
-msgid_plural "'%(value)s' are not valid choices for this field."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: env/Lib/site-packages/wtforms/fields/datetime.py:50
-msgid "Not a valid datetime value."
-msgstr ""
+#~ msgid "Invalid UUID."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/datetime.py:76
-msgid "Not a valid date value."
-msgstr ""
+#~ msgid "Invalid value, must be one of: %(values)s."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/datetime.py:102
-msgid "Not a valid time value."
-msgstr ""
+#~ msgid "Invalid value, can't be any of: %(values)s."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/numeric.py:82
-#: env/Lib/site-packages/wtforms/fields/numeric.py:92
-msgid "Not a valid integer value."
-msgstr ""
+#~ msgid "Invalid CSRF Token."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/numeric.py:167
-msgid "Not a valid decimal value."
-msgstr ""
+#~ msgid "CSRF token missing."
+#~ msgstr ""
 
-#: env/Lib/site-packages/wtforms/fields/numeric.py:196
-msgid "Not a valid float value."
-msgstr ""
+#~ msgid "CSRF failed."
+#~ msgstr ""
+
+#~ msgid "CSRF token expired."
+#~ msgstr ""
+
+#~ msgid "Invalid Choice: could not coerce."
+#~ msgstr ""
+
+#~ msgid "Choices cannot be None."
+#~ msgstr ""
+
+#~ msgid "Not a valid choice."
+#~ msgstr ""
+
+#~ msgid "Invalid choice(s): one or more data inputs could not be coerced."
+#~ msgstr ""
+
+#~ msgid "'%(value)s' is not a valid choice for this field."
+#~ msgid_plural "'%(value)s' are not valid choices for this field."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+#~ msgstr[2] ""
+
+#~ msgid "Not a valid datetime value."
+#~ msgstr ""
+
+#~ msgid "Not a valid date value."
+#~ msgstr ""
+
+#~ msgid "Not a valid time value."
+#~ msgstr ""
+
+#~ msgid "Not a valid integer value."
+#~ msgstr ""
+
+#~ msgid "Not a valid decimal value."
+#~ msgstr ""
+
+#~ msgid "Not a valid float value."
+#~ msgstr ""
 

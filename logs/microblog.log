@@ -108,3 +108,7 @@ WHERE user.username = ?
 2022-09-06 22:02:42,315 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
 2022-09-06 22:02:55,055 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
 2022-09-06 22:03:20,360 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
+2022-09-07 19:30:42,499 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
+2022-09-07 19:32:11,733 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
+2022-09-07 19:33:20,333 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
+2022-09-07 19:35:56,518 INFO: Microblog startup [in C:\Users\User\PycharmProjects\flask_miniblog\app\__init__.py:82]
